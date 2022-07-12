@@ -10,7 +10,7 @@
 		6DFE8634287D7C05003ED6F9 /* TransparentWKWebViewApp.swift in Sources */ = {isa = PBXBuildFile; fileRef = 6DFE8633287D7C05003ED6F9 /* TransparentWKWebViewApp.swift */; };
 		6DFE8636287D7C05003ED6F9 /* ContentView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 6DFE8635287D7C05003ED6F9 /* ContentView.swift */; };
 		6DFE8638287D7C06003ED6F9 /* Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = 6DFE8637287D7C06003ED6F9 /* Assets.xcassets */; };
-		6DFE863B287D7C06003ED6F9 /* Preview Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = 6DFE863A287D7C06003ED6F9 /* Preview Assets.xcassets */; };
+		6DFE8643287D7D7B003ED6F9 /* demo.html in Resources */ = {isa = PBXBuildFile; fileRef = 6DFE8642287D7D7B003ED6F9 /* demo.html */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXFileReference section */
@@ -18,8 +18,8 @@
 		6DFE8633287D7C05003ED6F9 /* TransparentWKWebViewApp.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = TransparentWKWebViewApp.swift; sourceTree = "<group>"; };
 		6DFE8635287D7C05003ED6F9 /* ContentView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ContentView.swift; sourceTree = "<group>"; };
 		6DFE8637287D7C06003ED6F9 /* Assets.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; path = Assets.xcassets; sourceTree = "<group>"; };
-		6DFE863A287D7C06003ED6F9 /* Preview Assets.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; path = "Preview Assets.xcassets"; sourceTree = "<group>"; };
 		6DFE863C287D7C06003ED6F9 /* TransparentWKWebView.entitlements */ = {isa = PBXFileReference; lastKnownFileType = text.plist.entitlements; path = TransparentWKWebView.entitlements; sourceTree = "<group>"; };
+		6DFE8642287D7D7B003ED6F9 /* demo.html */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = text.html; path = demo.html; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -54,19 +54,11 @@
 			children = (
 				6DFE8633287D7C05003ED6F9 /* TransparentWKWebViewApp.swift */,
 				6DFE8635287D7C05003ED6F9 /* ContentView.swift */,
+				6DFE8642287D7D7B003ED6F9 /* demo.html */,
 				6DFE8637287D7C06003ED6F9 /* Assets.xcassets */,
 				6DFE863C287D7C06003ED6F9 /* TransparentWKWebView.entitlements */,
-				6DFE8639287D7C06003ED6F9 /* Preview Content */,
 			);
 			path = TransparentWKWebView;
-			sourceTree = "<group>";
-		};
-		6DFE8639287D7C06003ED6F9 /* Preview Content */ = {
-			isa = PBXGroup;
-			children = (
-				6DFE863A287D7C06003ED6F9 /* Preview Assets.xcassets */,
-			);
-			path = "Preview Content";
 			sourceTree = "<group>";
 		};
 /* End PBXGroup section */
@@ -127,7 +119,7 @@
 			isa = PBXResourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
-				6DFE863B287D7C06003ED6F9 /* Preview Assets.xcassets in Resources */,
+				6DFE8643287D7D7B003ED6F9 /* demo.html in Resources */,
 				6DFE8638287D7C06003ED6F9 /* Assets.xcassets in Resources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
@@ -269,7 +261,6 @@
 				CODE_SIGN_STYLE = Automatic;
 				COMBINE_HIDPI_IMAGES = YES;
 				CURRENT_PROJECT_VERSION = 1;
-				DEVELOPMENT_ASSET_PATHS = "\"TransparentWKWebView/Preview Content\"";
 				DEVELOPMENT_TEAM = 276HSJ6V54;
 				ENABLE_HARDENED_RUNTIME = YES;
 				ENABLE_PREVIEWS = YES;
@@ -296,7 +287,6 @@
 				CODE_SIGN_STYLE = Automatic;
 				COMBINE_HIDPI_IMAGES = YES;
 				CURRENT_PROJECT_VERSION = 1;
-				DEVELOPMENT_ASSET_PATHS = "\"TransparentWKWebView/Preview Content\"";
 				DEVELOPMENT_TEAM = 276HSJ6V54;
 				ENABLE_HARDENED_RUNTIME = YES;
 				ENABLE_PREVIEWS = YES;
