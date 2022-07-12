@@ -1,8 +1,5 @@
-
-
 import SwiftUI
 import WebKit
-
 
 struct ContentView: View {
     
@@ -20,7 +17,6 @@ struct ContentView: View {
     }
 }
 
-
 public struct WKWebViewRepresentable: NSViewRepresentable {
     
     public init(url: URL) {
@@ -36,34 +32,13 @@ public struct WKWebViewRepresentable: NSViewRepresentable {
     }()
     
     public func makeNSView(context: Context) -> WKWebView {
-        
-        let webView = TransparentWKWebView(frame: CGRect.zero, configuration: self.configuration)
-        
-        webView.setValue(true, forKey: "drawsTransparentBackground")
-        webView.setValue(false, forKey: "drawsBackground")
-        
+        let webView = WKWebView(frame: CGRect.zero, configuration: configuration)
         webView.wantsLayer = true
-        webView.layer?.backgroundColor = NSColor.clear.cgColor
-        
-        webView.underPageBackgroundColor = NSColor.clear
-        webView.enclosingScrollView?.backgroundColor = NSColor.clear
-        
         return webView
-        
     }
-    
     
     public func updateNSView(_ webView: WKWebView, context: Context) {
         let request = URLRequest(url: self.url)
         webView.load(request)
-    }
-    
-    
-}
-
-
-final class TransparentWKWebView: WKWebView {
-    override var isOpaque: Bool {
-        return false
     }
 }
